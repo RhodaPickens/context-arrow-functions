@@ -3,7 +3,8 @@ class User {
     this.name = name;
   }
 
-  changeName(newName) {
+  //change to arrow function to keep this in context
+  changeName = (newName) => {
     this.name = newName;
     return this.name;
   }
